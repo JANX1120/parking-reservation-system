@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkEase | User Dashboard</title>
+
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-square-parking"></i>
+                <div>
+                    <h2>ParkEase</h2>
+                    <p>User Portal</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="#" class="nav-link active" data-page="home">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="#" class="nav-link" data-page="find">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Find &amp; Reserve</span>
+                </a>
+
+                <a href="#" class="nav-link" data-page="reservations">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>My Reservations</span>
+                </a>
+
+                <a href="#" class="nav-link" data-page="cancel">
+                    <i class="fa-solid fa-calendar-xmark"></i>
+                    <span>Cancel Reservation</span>
+                </a>
+
+                <a href="#" class="nav-link" data-page="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <span>My Profile</span>
+                </a>
+
+                <a href="#" class="nav-link" data-page="history">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Reservation History</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-note">
+                <span><i class="fa-solid fa-sparkles"></i></span>
+                <p><strong>Make room for the good stuff.</strong><br>We’ll help you find your spot.</p>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="../SigningIn/user-login.html" class="logout-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Log Out</span>
+                </a>
+            </div>
+        </aside>
+
+        <button class="sidebar-backdrop" id="sidebarBackdrop" type="button" aria-label="Close navigation menu"></button>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+                    <h2 id="pageTitle">Home</h2>
+                    <p id="pageSubtitle">Welcome to your ParkEase dashboard.</p>
+                </div>
+
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span id="displayUsername">User</span>
+                </div>
+            </header>
+
+            <section class="page-content" id="pageContent">
+                <!-- Dashboard content will appear here -->
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>
